@@ -114,26 +114,6 @@ class ContactThreeForm extends React.Component {
             }
 
         `
-
-        const Textarea = styled.textarea`
-            width: 100%;
-            background-color: #111;
-            border: none;
-            border-bottom: 1px solid #444;
-            padding: 10px 5px;
-            border-radius: 0;
-            color: rgb(255, 255, 255);
-            transition: all 0.5s ease 0s;
-            min-height: 100px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            height: 100px;
-            &:focus {
-              border-bottom: 1px solid #04e5e5;
-              outline: none;
-            }
-        `
-
         const Submit = styled.button`
             display: block;
             height: 50px;

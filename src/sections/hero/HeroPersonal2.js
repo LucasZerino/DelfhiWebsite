@@ -69,26 +69,6 @@ class HeroPersonal extends React.Component {
             
         `
 
-        const Heading = styled.div`
-            .glitch {
-                font-size: 140px;
-                line-height: 140px;
-                font-weight: 600;
-                color: #fff;
-                @media (max-width: 767px) {
-                    font-size: 40px;
-                    line-height: 50px;
-                }
-            }
-        `
-
-        const SubHeading = styled.h2`
-            font-size: 18px;
-            font-weight: 300;
-            color: #ccc;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-        `
         const Type = styled.div`
             font-size: 20px;
             line-height: 50px;

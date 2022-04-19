@@ -32,8 +32,6 @@ class AboutOne extends React.Component {
           const AboutContainer = styled(Container)`
               padding: 250px 0 100px 0;
               .cardContainer{
-                top: 80%;
-                transform: translateY(-30%);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -41,11 +39,8 @@ class AboutOne extends React.Component {
                 max-width: 1200px;
                 flex-wrap: wrap;
             }
-            
             .cardContainer .card{
                 position: relative;
-                top: 100px;
-                right: 50px;
                 min-width: 320px;
                 height: 440px;
                 box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
@@ -138,26 +133,21 @@ class AboutOne extends React.Component {
                 background: #e85a0c;
             }
             
-              @media (min-width:600px) and (max-width:768px) {
-                  padding: 350px 0 100px 0;
-              }
-              @media (min-width:769px) and (max-width:1024px) {
-                padding: 300px 0 100px 0;
-              }
-              @media (min-width:1025px) and (max-width:1399px) {
-                padding: 400px 0 100px 0;
-              }
-              @media (max-width:767px) {
-                  padding: 50px 50px;
-              }
               @media (max-width: 800px){
-                .card{
-                    margin-top: 200px;
-                }
                 .cardContainer{
+                    display: flex;
                     position: relative;
-                    margin-top: 50px;
-                    left: 12%;
+                    margin-top: 100px;
+                    width: 100%;
+                    justify-content: center;
+                }   
+                .card{
+                    position: relative;
+                }
+                .content{
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
                 }
             }
           `
@@ -190,31 +180,6 @@ class AboutOne extends React.Component {
                   font-size: 40px;
                   line-height: 40px;
               }
-          `
-  
-          const CounterComponent = styled.div`
-              margin: 10px 0;
-              @media (max-width:767px) {
-                  margin: 50px 0;
-                  text-align:center;
-              }
-              .value {
-                  font-size: 120px;
-                  font-family: Teko;
-                  color: #fff;
-                  line-height: 90px;
-              }
-              .text {
-                  font-size: 20px;
-                  color: #fff;
-              }
-              .symbol {
-                  color: #04e5e5;
-                  position: relative;
-                  font-size: 39px;
-                  top: -38px;
-              }
-  
           `
   
           const LeftCol = styled(Col)`
@@ -340,8 +305,6 @@ class AboutOne extends React.Component {
                 .card{
                     margin-top: 100px;
                     position: relative;
-                    left: 50%;
-                    transform: translateX(-50%);
                 }
                 .card:hover .photo{
                     display:none;
@@ -351,7 +314,7 @@ class AboutOne extends React.Component {
                 .card{
                     margin-top: 200px;
                 }
-                .cardContainer{
+                .cardContainer{                 
                     position: relative;
                     margin-top: 150px;
                     justify-content: center;
@@ -451,6 +414,7 @@ class AboutOne extends React.Component {
                           <Col md={6}>
                               <Row>
                               <RevealContent>
+                                
                                 <div class="cardContainer">
                                     <div class="card">
                                         <div class="box">

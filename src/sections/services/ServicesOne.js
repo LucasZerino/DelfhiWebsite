@@ -64,28 +64,14 @@ class ServicesOne extends React.Component {
             }
             @media screen and (max-width: 767px) {
               .ps-timeline-sec .container ol:before {
-                background: #348e80;
-                content: "";
-                width: 10px;
-                height: 10px;
-                border-radius: 100%;
-                position: absolute;
-                top: 130px !important;
-                left: 36px !important;
+                display: none;
               }
               .ps-timeline-sec .container ol:after {
-                background: #348e80;
-                content: "";
-                width: 10px;
-                height: 10px;
-                border-radius: 100%;
-                position: absolute;
-                top: inherit !important;
-                left: 36px;
+                display: none;
               }
               .ps-timeline-sec .container ol.ps-timeline {
                 margin: 130px 0 !important;
-                border-left: 2px solid #348e80;
+                border-left: 2px solid #e85a0c;
                 padding-left: 0 !important;
                 padding-top: 120px !important;
                 border-top: 0 !important;
@@ -173,7 +159,7 @@ class ServicesOne extends React.Component {
               }
             }
             .ps-timeline-sec .container ol:before {
-              background: #348e80;
+              background: #e85a0c;
               content: "";
               width: 10px;
               height: 10px;
@@ -183,7 +169,7 @@ class ServicesOne extends React.Component {
               top: 49.5%;
             }
             .ps-timeline-sec .container ol:after {
-              background: #348e80;
+              background: #e85a0c;
               content: "";
               width: 10px;
               height: 10px;
@@ -195,7 +181,7 @@ class ServicesOne extends React.Component {
             .ps-timeline-sec .container ol.ps-timeline {
               margin: 390px 0;
               padding: 0;
-              border-top: 2px solid #348e80;
+              border-top: 2px solid #e85a0c;
               list-style: none;
             }
             .ps-timeline-sec .container ol.ps-timeline li {
@@ -209,7 +195,7 @@ class ServicesOne extends React.Component {
               height: 50px;
               margin-left: -25px;
               background: #fff;
-              border: 4px solid #348e80;
+              border: 4px solid #e85a0c;
               border-radius: 50%;
               box-shadow: 0 0 0 0px #fff;
               text-align: center;
@@ -325,7 +311,7 @@ class ServicesOne extends React.Component {
         }
         .ps-timeline-sec .container ol.ps-timeline {
           margin: 130px 0 !important;
-          border-left: 2px solid #348e80;
+          border-left: 2px solid #e85a0c;
           padding-left: 0 !important;
           padding-top: 120px !important;
           border-top: 0 !important;
@@ -536,44 +522,8 @@ class ServicesOne extends React.Component {
       .ps-timeline-sec .container ol.ps-timeline li .ps-bot {
         position: absolute;
         margin-top: 35px;
-      }
-                  
+      }           
         `
-
-
-        const ServiceElement = styled.div`
-            margin-bottom: 20px;
-            text-align: center;
-            padding: 40px;
-            border-radius: 20px;
-            transition: .2s;
-            &:hover {
-                background-color: rgba(255,255,255, 0.6);;
-                box-shadow: 0 28px 60px rgb(255, 255, 255, .3);
-                transform: translateY(-10px);
-            }
-        `
-         const ServiceHeading = styled.h4
-         `
-            font-size: 30px;
-            font-weight: 500;
-            font-family: Teko;
-            color: #fff;
-        `
-        const ServiceSeparator = styled.div`
-            height: 5px;
-            width: 150px;
-            background-color: #e85a0c;
-            margin-bottom: 10px;
-            margin: auto;
-         `
-        const ServiceIcon = styled.div`
-            margin-bottom: 20px;
-            img {
-                max-height: 70px;
-            }
-        `
-
 
         return(
             <Section id="CONTRATAR">

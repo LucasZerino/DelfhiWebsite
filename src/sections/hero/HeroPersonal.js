@@ -76,14 +76,6 @@ class HeroPersonal extends React.Component {
                 }
             }
         `
-
-        const SubHeading = styled.h2`
-            font-size: 18px;
-            font-weight: 300;
-            color: #ccc;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-        `
         const Type = styled.div`
             font-size: 30px;
             line-height: 50px;

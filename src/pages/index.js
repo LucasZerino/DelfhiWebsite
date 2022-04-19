@@ -5,9 +5,7 @@ import Helmet from 'react-helmet'
 import Hero from '../sections/hero/Hero.js'
 import AboutOne from '../sections/about/AboutOne.js'
 import ServicesOne from '../sections/services/ServicesOne.js'
-import TestimonialsOne from '../sections/testimonials/TestimonialsThree'
-import ContactCreative from '../sections/contact/ContactCreative.js'
-import ClientsOne from '../sections/clients/ClientsOne'
+
 
 class Index extends React.Component {
 
